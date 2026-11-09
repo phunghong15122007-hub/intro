@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>學中文 - 學語言與單字</title>
+  <style>
+    :root {
+      --primary: #e63946;
+      --secondary: #457b9d;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text: #1d3557;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h2 {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      color: var(--primary);
+    }
+
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .vocab-item {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .vocab-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hanzi {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .pinyin {
+      color: var(--secondary);
+      font-size: 0.95rem;
+      margin: 4px 0;
+    }
+
+    .meaning {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .phrase-box {
+      background-color: #f1faee;
+      border-left: 4px solid var(--secondary);
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .phrase-zh {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .phrase-py {
+      color: var(--secondary);
+      font-size: 0.9rem;
+    }
+
+    .phrase-vi {
+      color: #4a5568;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>學中文 (Tiếng Trung)</h1>
+    <p>Giới thiệu bản thân & Từ vựng sở thích</p>
+  </header>
+
+  <div class="container">
+    
+    <!-- 1. 自我介紹/ Single Intro -->
+    <div class="card">
+      <h2>自我介紹 (Giới thiệu bản thân)</h2>
+      <div class="phrase-box">
+        <div class="phrase-zh">你好！我叫 冯氏红。</div>
+        <div class="phrase-py">Nǐ hǎo! Wǒ jiào Féng Shì Hóng.</div>
+        <div class="phrase-vi">Xin chào! Tôi tên là Phùng Thị Hồng.</div>
+      </div>
+      <div class="phrase-box">
+        <div class="phrase-zh">我 2006 年出生于 北宁。</div>
+        <div class="phrase-py">Wǒ èr líng líng liù nián chūshēng yú Běiníng.</div>
+        <div class="phrase-vi">Tôi sinh năm 2006 tại Bắc Ninh.</div>
+      </div>
+      <div class="phrase-box">
+        <div class="phrase-zh">我的爱好是看韩国、中国电视剧和吃东西。</div>
+        <div class="phrase-py">Wǒ de àihào shì kàn Hánguó, Zhōngguó diànshìjù hé chī dōngxī.</div>
+        <div class="phrase-vi">Sở thích của tôi là xem phim Hàn Quốc, Trung Quốc và ăn uống.</div>
+      </div>
+    </div>
+
+    <!-- 2. 電視劇單字 / Movies Vocab -->
+    <div class="card">
+      <h2>看電影 (Xem phim)</h2>
+      <div class="vocab-grid">
+        <div class="vocab-item">
+          <div class="hanzi">看电影</div>
+          <div class="pinyin">Kàn diànyǐng</div>
+          <div class="meaning">Xem phim</div>
+        </div>
+        <div class="vocab-item">
+          <div class="hanzi">电视剧</div>
+          <div class="pinyin">Diànshìjù</div>
+          <div class="meaning">Phim truyền hình</div>
+        </div>
+        <div class="vocab-item">
+          <div class="hanzi">追剧</div>
+          <div class="pinyin">Zhuī jù</div>
+          <div class="meaning">Cày phim</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. 飲食單字 / Food Vocab -->
+    <div class="card">
+      <h2>饮食 (Ăn uống)</h2>
+      <div class="vocab-grid">
+        <div class="vocab-item">
+          <div class="hanzi">吃美食</div>
+          <div class="pinyin">Chī měishí</div>
+          <div class="meaning">Ăn món ngon</div>
+        </div>
+        <div class="vocab-item">
+          <div class="hanzi">喝奶茶</div>
+          <div class="pinyin">Hē nǎichá</div>
+          <div class="meaning">Uống trà sữa</div>
+        </div>
+        <div class="vocab-item">
+          <div class="hanzi">好吃</div>
+          <div class="pinyin">Hǎochī</div>
+          <div class="meaning">Ngon (đồ ăn)</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
